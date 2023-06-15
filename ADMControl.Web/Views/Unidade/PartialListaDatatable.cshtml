@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ADMControl.Dominio.Entidades.Unidade>;
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            @*<th class="text-center col-2">Id</th>*@
+            <th class="text-center col-2">Sigla</th>
+            <th class="text-center col-8">Nome</th>
+            <th class="text-center col-2">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @*<td class="text-center">@item.UNI_ID</td>*@
+                <td class="text-center">@item.UNI_SIGLA</td>
+                <td class="text-center">@item.UNI_NOME</td>
+                <td class="d-flex justify-content-center">
+                    <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.UNI_ID)">Editar</button>
+                    <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirUnidade(@item.UNI_ID)">Excluir</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/js/Unidade.js"></script>
+}

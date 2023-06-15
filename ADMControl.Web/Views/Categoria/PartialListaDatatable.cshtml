@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ADMControl.Dominio.Entidades.Categoria>;
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th class="text-center col-2">Id</th>
+            <th class="text-center col-8">Nome</th>
+            <th class="text-center col-2">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center">@item.CAT_ID</td>
+                <td class="text-center">@item.CAT_NOME</td>
+                <td class="d-flex justify-content-center">
+                    <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.CAT_ID)">Editar</button>
+                    <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirCategoria(@item.CAT_ID)">Excluir</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/js/Categoria.js"></script>
+}
