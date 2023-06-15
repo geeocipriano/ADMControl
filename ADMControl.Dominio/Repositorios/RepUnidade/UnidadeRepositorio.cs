@@ -81,7 +81,7 @@
                 }
                 else
                 {
-                    Categoria? _obj = await _context.Categoria.FindAsync(obj.UNI_ID);
+                    Unidade? _obj = await _context.Unidade.FindAsync(obj.UNI_ID);
                     if (_obj != null)
                         _context.Entry(_obj).CurrentValues.SetValues(UpperCaseHelper.ObjToUpper(obj, _context));
                     else

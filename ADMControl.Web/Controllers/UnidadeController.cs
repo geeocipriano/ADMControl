@@ -41,7 +41,7 @@
                 {
                     Unidade unidade = new()
                     {
-                        UNI_SIGLA = siglaUnidade,
+                        UNI_SIGLA = siglaUnidade.ToUpper(),
                         UNI_NOME = nomeUnidade,
                     };
                     await _repUni.Salvar(unidade);
@@ -50,7 +50,8 @@
                 {
                     Unidade unidade = new()
                     {
-                        UNI_SIGLA = siglaUnidade,
+                        UNI_ID = idUnidade,
+                        UNI_SIGLA = siglaUnidade.ToUpper(),
                         UNI_NOME = nomeUnidade,
                     };
                     await _repUni.Salvar(unidade);
