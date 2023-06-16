@@ -1,0 +1,82 @@
+﻿@model ADMControl.Web.Models.ProdutoViewModel
+
+
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Informações da Unidade</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card card-warning">
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" asp-for="Produto.PRO_ID" id="Id" class="form-control" hidden>
+                                        <input type="text" asp-for="Produto.PRO_DESC" id="Descricao" class="form-control" placeholder="Enter ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- select -->
+                                    <div class="form-group">
+                                        <label>Unidade</label>
+                                        <select asp-for="@Model.FilSelectedUnidade" asp-items="@Model.listaUnidades" class="form-control select2" data-toggle="select2" name="FilSelectedUnidade" id="FilSelectedUnidade"></select>
+@*                                        <select class="form-control" id="Unidade">
+                                            <option>UN</option>
+                                            <option>KG</option>
+                                            <option>MT</option>
+                                        </select>*@
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- select -->
+                                    <div class="form-group">
+                                        <label>Categoria</label>
+                                        <select asp-for="@Model.FilSelectedCategoria" asp-items="@Model.listaCategorias" class="form-control select2" data-toggle="select2" name="FilListaCategoria" id="FilListaCategoria"></select>
+@*                                        <select class="form-control" id="Categoria">
+                                            <option>ELETRONICO</option>
+                                            <option>DECORAÇÃO</option>
+                                            <option>ALIMENTO</option>
+                                        </select>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Estoque Minimo</label>
+                                        <input type="text" asp-for="Produto.PRO_MIN" id="Estmin" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Estoque Maximo</label>
+                                        <input type="text" asp-for="Produto.PRO_MAX" id="Estmax" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Estoque Atual</label>
+                                        <input type="text" asp-for="Produto.PRO_ATU" id="Estatu" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

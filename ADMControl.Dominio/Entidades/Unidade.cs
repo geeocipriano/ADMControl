@@ -1,4 +1,6 @@
-﻿namespace ADMControl.Dominio.Entidades
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ADMControl.Dominio.Entidades
 {
     public class Unidade
     {

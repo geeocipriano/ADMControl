@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ADMControl.Dominio.Entidades.Produto>;
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th class="text-center col-1">Id</th>
+            <th class="text-center col-6">Nome</th>
+            <th class="text-center col-1">Categoria</th>
+            <th class="text-center col-1">Estoque</th>
+            <th class="text-center col-1">Unidade</th>
+            <th class="text-center col-2">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center">@item.PRO_ID</td>
+                <td class="text-center">@item.PRO_DESC</td>
+                <td class="text-center">@item.Categoria.CAT_NOME</td>
+                <td class="text-center">@item.PRO_ATU</td>
+                <td class="text-center">@item.Unidade.UNI_SIGLA</td>
+                <td class="d-flex justify-content-center">
+                    <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.PRO_ID)">Editar</button>
+                    <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirProduto(@item.PRO_ID)">Excluir</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/js/Produto.js"></script>
+}

@@ -33,6 +33,40 @@ namespace ADMControl.Dominio.Migrations
                     b.ToTable("CATEGORIA", (string)null);
                 });
 
+            modelBuilder.Entity("ADMControl.Dominio.Entidades.Produto", b =>
+                {
+                    b.Property<int>("PRO_ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<double>("PRO_ATU")
+                        .HasColumnType("double");
+
+                    b.Property<string>("PRO_DESC")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PRO_IDCATEGORIA")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PRO_IDUNIDADE")
+                        .HasColumnType("int");
+
+                    b.Property<double>("PRO_MAX")
+                        .HasColumnType("double");
+
+                    b.Property<double>("PRO_MIN")
+                        .HasColumnType("double");
+
+                    b.HasKey("PRO_ID");
+
+                    b.HasIndex("PRO_IDCATEGORIA");
+
+                    b.HasIndex("PRO_IDUNIDADE");
+
+                    b.ToTable("PRODUTO", (string)null);
+                });
+
             modelBuilder.Entity("ADMControl.Dominio.Entidades.Unidade", b =>
                 {
                     b.Property<int>("UNI_ID")
@@ -50,6 +84,25 @@ namespace ADMControl.Dominio.Migrations
                     b.HasKey("UNI_ID");
 
                     b.ToTable("UNIDADE", (string)null);
+                });
+
+            modelBuilder.Entity("ADMControl.Dominio.Entidades.Produto", b =>
+                {
+                    b.HasOne("ADMControl.Dominio.Entidades.Categoria", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("PRO_IDCATEGORIA")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ADMControl.Dominio.Entidades.Unidade", "Unidade")
+                        .WithMany()
+                        .HasForeignKey("PRO_IDUNIDADE")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categoria");
+
+                    b.Navigation("Unidade");
                 });
 #pragma warning restore 612, 618
         }

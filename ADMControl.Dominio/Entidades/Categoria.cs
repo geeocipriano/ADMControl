@@ -1,4 +1,6 @@
-﻿namespace ADMControl.Dominio.Entidades
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ADMControl.Dominio.Entidades
 {
     public class Categoria
     {
@@ -8,5 +10,6 @@
 
         [Display(Name = "Nome")]
         public string CAT_NOME { get; set; } = string.Empty;
+
     }
 }

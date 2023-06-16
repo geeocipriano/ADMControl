@@ -1,4 +1,6 @@
-﻿namespace ADMControl.Web
+﻿using ADMControl.Dominio.Repositorios.RepProduto;
+
+namespace ADMControl.Web
 {
     public class Startup
     {
@@ -29,6 +31,7 @@
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
             services.AddScoped<IUnidadeRepositorio, UnidadeRepositorio>();
+            services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
 
             services.AddSession(options =>
             {
