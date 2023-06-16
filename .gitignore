@@ -11,3 +11,7 @@
 ADMControl.Dominio/obj/Debug/net7.0/ADMControl.Dominio.dll
 *.pdb
 *.dll
+*.v2
+*.dll
+*.pdb
+*.dll

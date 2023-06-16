@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HPatVboCaqKogaTr4wh5CckEtKthOXu2znL5HP8P/b0=",
+  "Hash": "bnX/ns+FavvN67Bdk9dkJ0APUlH/jnOZezAnPRfITkI=",
   "Source": "ADMControl.Web",
   "BasePath": "_content/ADMControl.Web",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Categoria.js"
+    },
+    {
+      "Identity": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\Colaborador.js",
+      "SourceId": "ADMControl.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\",
+      "BasePath": "_content/ADMControl.Web",
+      "RelativePath": "js/Colaborador.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Colaborador.js"
     },
     {
       "Identity": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\demo.js",

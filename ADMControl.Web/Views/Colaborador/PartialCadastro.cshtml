@@ -1,0 +1,51 @@
+﻿@model ADMControl.Web.Models.ColaboradorViewModel
+
+
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Informações do Colaborador</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card card-warning">
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" asp-for="Colaborador.COL_ID" id="Id" class="form-control" hidden>
+                                        <input type="text" asp-for="Colaborador.COL_NOME" id="Nome" class="form-control" placeholder="Enter ...">
+                                        @*<input asp-for="Colaborador.COL_ATIVO" class="form-check-inpu" type="checkbox" id="switch1" data-switch="bool" />*@
+                                        @*<input asp-for="Colaborador.COL_ATIVO" type="checkbox" class="custom-control-input" id="customSwitch1">*@
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group d-flex flex-column justify-content-center align-content-center">
+                                        <label asp-for="Colaborador.COL_ATIVO" class="align-self-center"></label>
+                                        <input asp-for="Colaborador.COL_ATIVO" class="mt-2 checkbox-large" type="checkbox" id="ativo" data-switch="bool" style="transform: scale(1.5);" />
+                                        @*<input asp-for="Colaborador.COL_ATIVO" class="mt-2 form-check-input-lg" type="checkbox" id="ativo" data-switch="bool" />*@
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        bsCustomFileInput.init();
+    });
+</script>

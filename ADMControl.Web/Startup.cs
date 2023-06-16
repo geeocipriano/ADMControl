@@ -1,6 +1,4 @@
-﻿using ADMControl.Dominio.Repositorios.RepProduto;
-
-namespace ADMControl.Web
+﻿namespace ADMControl.Web
 {
     public class Startup
     {
@@ -32,6 +30,7 @@ namespace ADMControl.Web
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
             services.AddScoped<IUnidadeRepositorio, UnidadeRepositorio>();
             services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+            services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
 
             services.AddSession(options =>
             {

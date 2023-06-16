@@ -10,12 +10,14 @@
         public DbSet<Categoria> Categoria { get; set; }
         public DbSet<Unidade> Unidade { get; set; }
         public DbSet<Produto> Produto { get; set; }
+        public DbSet<Colaborador> Colaborador { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Categoria>().ToTable("CATEGORIA");
             modelBuilder.Entity<Unidade>().ToTable("UNIDADE");
             modelBuilder.Entity<Produto>().ToTable("PRODUTO");
+            modelBuilder.Entity<Colaborador>().ToTable("COLABORADOR");
         }
     }
 }
