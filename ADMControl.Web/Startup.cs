@@ -31,6 +31,7 @@
             services.AddScoped<IUnidadeRepositorio, UnidadeRepositorio>();
             services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
             services.AddScoped<IColaboradorRepositorio, ColaboradorRepositorio>();
+            services.AddScoped<IEntradaRepositorio, EntradaRepositorio>();
 
             services.AddSession(options =>
             {

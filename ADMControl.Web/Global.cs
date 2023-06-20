@@ -2,6 +2,7 @@
 global using ADMControl.Dominio.Repositorios;
 global using ADMControl.Dominio.Repositorios.RepCategoria;
 global using ADMControl.Dominio.Repositorios.RepColaborador;
+global using ADMControl.Dominio.Repositorios.RepEntrada;
 global using ADMControl.Dominio.Repositorios.RepProduto;
 global using ADMControl.Dominio.Repositorios.RepUnidade;
 global using ADMControl.Web.Models;

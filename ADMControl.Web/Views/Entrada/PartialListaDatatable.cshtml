@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ADMControl.Dominio.Entidades.Entrada>;
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            @*<th class="text-center col-2">Id</th>*@
+            <th class="text-center col-2">Numero</th>
+            <th class="text-center col-8">Fornecedor</th>
+            <th class="text-center col-8">Fornecedor</th>
+            <th class="text-center col-2">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @*<td class="text-center">@item.UNI_ID</td>*@
+                <td class="text-center">@item.ENT_NUMERO</td>
+                <td class="text-center">@item.ENT_FORNECEDOR</td>
+                <td class="text-center">@item.ENT_DATA.ToShortDateString()</td>
+                <td class="d-flex justify-content-center">
+                    <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.ENT_ID)">Editar</button>
+                    <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirUnidade(@item.ENT_ID)">Excluir</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/js/Unidade.js"></script>
+}

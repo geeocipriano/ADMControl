@@ -249,6 +249,10 @@
       "PackagePath": "staticwebassets\\js\\Colaborador.js"
     },
     {
+      "Id": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\Entrada.js",
+      "PackagePath": "staticwebassets\\js\\Entrada.js"
+    },
+    {
       "Id": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\Produto.js",
       "PackagePath": "staticwebassets\\js\\Produto.js"
     },

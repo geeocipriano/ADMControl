@@ -40,6 +40,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sYWJvcmFkb3JcUGFydGlhbExpc3RhRGF0YXRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialCadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxQYXJ0aWFsQ2FkYXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialListaDatatable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxQYXJ0aWFsTGlzdGFEYXRhdGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialListaItens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxQYXJ0aWFsTGlzdGFJdGVucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/ProjetosP/ADMControl/ADMControl.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

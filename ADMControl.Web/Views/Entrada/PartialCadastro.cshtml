@@ -1,0 +1,78 @@
+﻿@model ADMControl.Web.Models.EntradaViewModel
+
+
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Informações da Unidade</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card card-warning">
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Numero</label>
+                                        <input type="text" asp-for="Entrada.ENT_ID" id="Id" class="form-control" hidden>
+                                        <input type="text" asp-for="Entrada.ENT_NUMERO" id="Numero" class="form-control" placeholder="Enter ...">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Data</label>
+                                        <input type="text" asp-for="Entrada.ENT_DATA" id="Data" class="form-control" placeholder="Enter ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Fornecedor</label>
+                                        <input type="text" asp-for="Entrada.ENT_FORNECEDOR" id="Fornecedor" class="form-control" placeholder="Enter ...">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Adicionar Produto</h3>
+                    </div>
+                    <div class="card-body ">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Fornecedor</label>
+                                    <input type="text" asp-for="Entrada.ENT_FORNECEDOR" id="Descricao" class="form-control" placeholder="Enter ...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+@*                    <div class="card-header">
+                        <h3 class="card-title">Produtos</h3>
+                    </div>*@
+                    <div class="card-body p-1">
+                        <div id="divListItens">
+                            @await Html.PartialAsync("PartialListaItens", Model.ProdutoxEntradas)
+                            @*@await Html.PartialAsync("PartialListaDatatable", Model.Entradas)*@
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
