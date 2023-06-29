@@ -1,31 +1,22 @@
 ﻿@model IEnumerable<ADMControl.Dominio.Entidades.ProdutoxEntrada>;
-<table id="example2" class="table table-bordered table-hover ">
+<table id="example3" class="table table-bordered table-hover ">
     <thead>
         <tr>
-            <th class="text-center col-1">Id</th>
-            <th class="text-center col-6">Descrição</th>
+            <th class="text-center col-1">Código</th>
+            <th class="text-center col-5">Descrição</th>
             <th class="text-center col-1">Qtd</th>
-            <th class="text-center col-2">Ações</th>
+            <th class="text-center col-3">Ações</th>
         </tr>
     </thead>
     <tbody>
-@*        <tr>
-            <td class="text-center">0</td>
-            <td class="text-center">teste</td>
-            <td class="text-center"><input type="text" id="Descricao" class="form-control" placeholder="0"></td>
-            <td class="d-flex justify-content-center">
-                <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(1)">Editar</button>
-                <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirProduto(1)">Excluir</button>
-            </td>
-        </tr>*@
         @foreach (var item in Model)
         {
             <tr>
-                <td class="text-center">@item.PXE_ID</td>
-                <td class="text-center">teste</td>
+                <td class="text-center">@item.Produto.PRO_ID</td>
+                <td class="text-center">@item.Produto.PRO_DESC</td>
                 <td class="text-center">@item.PXE_QUANTIDADE</td>
                 <td class="d-flex justify-content-center">
-                    <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.PXE_ID)">Editar</button>
+                    @*<button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.PXE_ID)">Editar</button>*@
                     <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirProduto(@item.PXE_ID)">Excluir</button>
                 </td>
             </tr>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qFhKTWhmnrmM8rG+zcVSjs3YCWxOM2gQPtTtjqPSRx8=",
+  "Hash": "v1PRUjWmOwG/l5rD+4/DVceAjghWX0niSCGNby25Isk=",
   "Source": "ADMControl.Web",
   "BasePath": "_content/ADMControl.Web",
   "Mode": "Default",
@@ -1188,6 +1188,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Entrada.js"
+    },
+    {
+      "Identity": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\jquery.mask.js",
+      "SourceId": "ADMControl.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\",
+      "BasePath": "_content/ADMControl.Web",
+      "RelativePath": "js/jquery.mask.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.mask.js"
+    },
+    {
+      "Identity": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\jquery.mask.min.js",
+      "SourceId": "ADMControl.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\",
+      "BasePath": "_content/ADMControl.Web",
+      "RelativePath": "js/jquery.mask.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.mask.min.js"
     },
     {
       "Identity": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\pages\\dashboard.js",

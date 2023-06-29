@@ -24,7 +24,7 @@
             services.AddCors();
             services.AddDbContext<EfDbContext>
             (
-                options => options.UseMySql(connection, ServerVersion.AutoDetect(connection))
+                options => options.UseMySql(connection, ServerVersion.AutoDetect(connection)).UseLazyLoadingProxies()
             );
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();

@@ -285,6 +285,14 @@
       "PackagePath": "staticwebassets\\js\\demo.js"
     },
     {
+      "Id": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\jquery.mask.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mask.js"
+    },
+    {
+      "Id": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\jquery.mask.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mask.min.js"
+    },
+    {
       "Id": "C:\\ProjetosP\\ADMControl\\ADMControl.Web\\wwwroot\\js\\pages\\dashboard.js",
       "PackagePath": "staticwebassets\\js\\pages\\dashboard.js"
     },

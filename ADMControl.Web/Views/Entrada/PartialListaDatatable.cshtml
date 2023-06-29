@@ -5,7 +5,7 @@
             @*<th class="text-center col-2">Id</th>*@
             <th class="text-center col-2">Numero</th>
             <th class="text-center col-8">Fornecedor</th>
-            <th class="text-center col-8">Fornecedor</th>
+            <th class="text-center col-8">Data</th>
             <th class="text-center col-2">Ações</th>
         </tr>
     </thead>
@@ -19,7 +19,7 @@
                 <td class="text-center">@item.ENT_DATA.ToShortDateString()</td>
                 <td class="d-flex justify-content-center">
                     <button type="button" class="btn  btn-warning btn-xs mx-2 w-50" onclick="AbreCadastro(@item.ENT_ID)">Editar</button>
-                    <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirUnidade(@item.ENT_ID)">Excluir</button>
+                    <button type="button" class="btn  btn-danger btn-xs mx-2 w-50" onclick="ExcluirEntrada(@item.ENT_ID)">Excluir</button>
                 </td>
             </tr>
         }

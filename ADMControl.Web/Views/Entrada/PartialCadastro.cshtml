@@ -25,7 +25,8 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Data</label>
-                                        <input type="text" asp-for="Entrada.ENT_DATA" id="Data" class="form-control" placeholder="Enter ...">
+                                        @*<input type="text" asp-for="Entrada.ENT_DATA" id="Data" class="form-control" placeholder="Enter ...">*@
+                                        <input type="text" class="form-control datepicker" placeholder="Selecione uma data">
                                     </div>
                                 </div>
                             </div>
@@ -37,24 +38,26 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div >
+                                        <label>Adicionar Produto</label>
+                                        <select asp-for="@Model.FilSelectedProduto" asp-items="@Model.listaProdutos" class="form-control select2" data-toggle="select2" name="FilSelectedProduto" id="FilSelectedProduto"></select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div>
+                                        <label>Qtd.</label>
+                                        <input type="text" class="form-control" id="double-input" placeholder="Quantidade">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex justify-content-end flex-column">
+                                    <button type="button" class="btn btn-primary w-100 mt-2" onclick="AdicionarProduto(@Model.Entrada.ENT_ID)">Adicionar</button>
+                                </div>
+
+                            </div>
                         </form>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Adicionar Produto</h3>
-                    </div>
-                    <div class="card-body ">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Fornecedor</label>
-                                    <input type="text" asp-for="Entrada.ENT_FORNECEDOR" id="Descricao" class="form-control" placeholder="Enter ...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="card">
 @*                    <div class="card-header">
@@ -71,8 +74,21 @@
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Salvar</button>
+                <button type="button" class="btn btn-primary btn-entrada">Salvar</button>
             </div>
         </div>
     </div>
 </div>
+<script>
+    // Inicialize o datepicker com o idioma em português
+    $(document).ready(function () {
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy', // Formato da data
+            language: 'pt-BR', // Idioma em português
+            autoclose: true, // Fecha o datepicker ao selecionar uma data
+            todayBtn: 'linked', // Botão "Hoje" no datepicker
+            todayHighlight: true // Destaca a data atual
+        });
+        $('#double-input').mask('000.000.000.000.000,00', { reverse: true });
+    });
+</script>

@@ -1,7 +1,10 @@
 ﻿$(document).ready(function () {
     criarTabela()
-    $(document).on('click', '#modal-default .btn-primary', function () {
+    $(document).on('click', '#modal-default .btn-entrada', function () {
         salvarEntrada();
+    });
+    $('#date').datepicker({
+        'language': 'pt-BR',
     });
 });
 
@@ -21,7 +24,17 @@ function refreshTabela(data) {
             url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/pt-BR.json',
         },
     });
-    $('#modal-default').modal('hide');
+/*    $('#modal-default').modal('hide');*/
+}
+
+function refreshTabelaItens(data) {
+    $('#example3').DataTable().clear().destroy();
+    $("#divListItens").html(data);
+    $('#example3').DataTable({
+        language: {
+            url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/pt-BR.json',
+        },
+    });
 }
 
 const AbreCadastro = (_Id) => {
@@ -35,8 +48,35 @@ const AbreCadastro = (_Id) => {
         success: function (data) {
             $("#divModalCadastro").html("");
             $("#divModalCadastro").html(data);
+            AbreProdutos(_Id);
             $('#modal-default').modal('show');
 
+        },
+        complete: function (data) {
+
+        },
+        error: function (data) {
+            console.log(data);
+            swal({
+                title: "Falha ao carregar dados!",
+                text: data.responseText,
+                icon: "error",
+                button: "Ok",
+            });
+        }
+    });
+}
+
+const AbreProdutos = (_Id) => {
+    $.ajax({
+        type: "get",
+        url: "/Entrada/AbreProdutos",
+        data: { id: _Id },
+        cache: false,
+        beforeSend: function (data) {
+        },
+        success: function (data) {
+            $("#divListItens").html(data);
         },
         complete: function (data) {
         },
@@ -69,13 +109,43 @@ function salvarEntrada() {
     });
 }
 
-const ExcluirUnidade = (id) => {
+const ExcluirEntrada = (id) => {
     $.ajax({
         type: 'POST',
-        url: '/Unidade/ExcluirUnidade',
+        url: '/Entrada/ExcluirEntrada',
         data: { Id: id },
         success: function (data) {
             refreshTabela(data)
+        },
+        error: function (xhr, status, error) {
+            console.error('Erro na requisição:', error);
+        }
+    });
+}
+
+const ExcluirProduto = (id) => {
+    $.ajax({
+        type: 'POST',
+        url: '/Entrada/ExcluirProduto',
+        data: { Id: id },
+        success: function (data) {
+            $("#divListItens").html(data);
+        },
+        error: function (xhr, status, error) {
+            console.error('Erro na requisição:', error);
+        }
+    });
+}
+
+const AdicionarProduto = (id) => {
+    const produto = $('#FilSelectedProduto').val();
+    const produto = $('#FilSelectedProduto').val();
+    $.ajax({
+        type: 'POST',
+        url: '/Entrada/AdicionarProduto',
+        data: { idEntrada: id , idProduto: produto},
+        success: function (data) {
+            $("#divListItens").html(data);
         },
         error: function (xhr, status, error) {
             console.error('Erro na requisição:', error);
