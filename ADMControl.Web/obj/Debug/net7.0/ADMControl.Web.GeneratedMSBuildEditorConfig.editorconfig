@@ -9,101 +9,101 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ADMControl.Web
 build_property.RootNamespace = ADMControl.Web
-build_property.ProjectDir = C:\ProjetosP\ADMControl\ADMControl.Web\
+build_property.ProjectDir = c:\ProjetosP\ADMControl\ADMControl.Web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\ProjetosP\ADMControl\ADMControl.Web
+build_property.MSBuildProjectDirectory = c:\ProjetosP\ADMControl\ADMControl.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Categoria/Index.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Categoria/PartialCadastro.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Categoria/PartialCadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXFBhcnRpYWxDYWRhc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Categoria/PartialListaDatatable.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Categoria/PartialListaDatatable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXFBhcnRpYWxMaXN0YURhdGF0YWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Colaborador/Index.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Colaborador/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sYWJvcmFkb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Colaborador/PartialCadastro.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Colaborador/PartialCadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sYWJvcmFkb3JcUGFydGlhbENhZGFzdHJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Colaborador/PartialListaDatatable.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Colaborador/PartialListaDatatable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sYWJvcmFkb3JcUGFydGlhbExpc3RhRGF0YXRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/Index.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialCadastro.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialCadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxQYXJ0aWFsQ2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialListaDatatable.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialListaDatatable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxQYXJ0aWFsTGlzdGFEYXRhdGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialListaItens.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Entrada/PartialListaItens.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxQYXJ0aWFsTGlzdGFJdGVucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Home/Index.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Home/Privacy.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Produto/Index.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Produto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Produto/PartialCadastro.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Produto/PartialCadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQYXJ0aWFsQ2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Produto/PartialListaDatatable.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Produto/PartialListaDatatable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQYXJ0aWFsTGlzdGFEYXRhdGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Shared/Error.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Unidade/Index.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Unidade/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Unidade/PartialCadastro.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Unidade/PartialCadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxQYXJ0aWFsQ2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Unidade/PartialListaDatatable.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Unidade/PartialListaDatatable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxQYXJ0aWFsTGlzdGFEYXRhdGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/_ViewImports.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/_ViewStart.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosP/ADMControl/ADMControl.Web/Views/Shared/_Layout.cshtml]
+[c:/ProjetosP/ADMControl/ADMControl.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-51dqrei30f
